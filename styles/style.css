@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* button */
+
+.primary-button {
+    padding: 10px 15px;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+}
+
+.primary-button:hover {
+    color: orange;
+    background-color: black;
+}
+
+
+/* navigation */
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 5vh 10vw 15vh 10vw;
+}
+
+.links > ul {
+    display: flex;
+    gap: 2vw;
+    list-style: none;
+}
+
+.links li > a {
+    text-decoration: none;
+    color: black;
+}
+
+/* header */
+
+.header-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-title2 {
+    margin-bottom: 5vh;
+}
+
+.header-description {
+    width: 50vw;
+    margin-bottom: 5vh;
+    color: lightslategray;
+}
+
+.header-image-container {
+    height: 40vw;
+    width: 80vw;
+    margin-bottom: 20vh;
+}
+
+#header-button {
+    margin-bottom: 5vh;
+}
+
+.header-image {
+    height: 100%;
+    width: 100%;
+}
+
+/* Quick List */
+
+.Quick-list-container {
+    display: flex;
+    gap: 50px;
+    padding: 0 10vw;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20vh;
+
+}
+
+.Quick-list-imgs-container {
+    display: grid;
+    width: 100vw;
+    gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.Quick-list-img {
+    height: 100%;
+    width: 100%;
+}
+
+.Quick-list-title, .flist-title2 {
+    font-size: 1.5em;
+}
+
+.Quick-list-title2 {
+    margin-bottom: 4vh;
+}
+
+.Quick-list-desc {
+    margin-bottom: 4vh;
+    line-height: 1.5;
+    color: lightslategray;
+}
+
+/* feature details */
+
+.feature-details-container {
+    display: flex;
+    width: 80vw;
+    margin: 0 auto 15vh auto;
+}
+
+.feature-description-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-content-container {
+    padding: 0px 30px;
+}
+
+.feature-title, .feature-title2 {
+    font-size: 1.5em;
+    border-left: 3px solid orange;
+    padding-left: 20px;
+}
+
+.feature-title2 {
+    margin-bottom: 10px;
+}
+
+.feature-content-title {
+    margin-bottom: 5px;
+}
+
+.feature-description {
+    color: lightslategray;
+    margin-bottom: 25px;
+}
+
+.feature-image-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+}
+
+.feature-image {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+
+/* fact */
+
+.fact-container {
+    padding: 0 10vw;
+    margin-bottom: 20vh;
+}
+
+.fact-title {
+    font-size: 1.5em;
+    margin-bottom: 5vh;
+}
+
+.fact-description {
+    margin-bottom: 10vh;
+    color: lightslategray;
+}
+
+.fact-icons-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fact-icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FD6E0A;
+    border-radius: 5px;
+    width: 125px;
+    height: 125px;
+}
+
+.fact-icon {
+    margin-bottom: 10px;
+}
+
+.fact-icon:hover {
+    transform: translate(0, -10px) scale(1.5);
+    transition: 1.5s;
+    cursor: pointer;
+}
+
+.sponsor-container {
+    width: 80vw;
+    margin: 0 auto 15vh auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sponsor-title {
+    font-size: 1.5em;
+    margin-bottom: 3vh;
+}
+
+.sponsor-description {
+    color: lightslategray;
+    margin-bottom: 6vh;
+}
+
+.sponsor-image-container {
+    display: flex;
+    gap: 2vw;
+}
+
+.sponsor-image {
+    width: 10vw;
+    filter: grayscale(1);
+}
+
+/* media query */
+
+@media only screen and (max-width: 576px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    .text-logo {
+        margin-bottom: 3vw;
+    }
+
+    .links > ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature-details-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-image-container {
+        width: 50vw;
+    }
+
+    .Quick-list-container {
+        flex-direction: column;
+    }
+
+    .Quick-list-imgs-container {
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+
+    }
+
+    .Quick-list-content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fact-icons-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fact-icon-container {
+        margin-bottom: 5vh;
+    }
+
+    .sponsor-image-container {
+        flex-direction: column;
+    }
+
+}
